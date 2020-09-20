@@ -59,10 +59,10 @@ a:not([class]) {
 }
 
 /* Make images easier to work with */
-img {
+/* img {
   max-width: 100%;
   display: block;
-}
+} */
 
 /* Natural flow and rhythm in articles by default */
 article > * + * {

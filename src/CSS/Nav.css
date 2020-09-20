@@ -1,0 +1,16 @@
+.Splash {
+    background-image: url('../Images/Ramona.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Quote {
+    min-width: 33vw;
+    max-width: 66vw;
+    text-align: right;
+}

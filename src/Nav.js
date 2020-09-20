@@ -1,11 +1,18 @@
 import React from 'react';
+import './CSS/Nav.css';
+
 
 const Nav = () => {
     return (
-        <div>
-            <div>splash</div>
+        <>
+            <div className="Splash">
+                <div className="Quote">
+                    "No worries, I got your back." <br/>
+                    - Ghandi
+                </div>
+            </div>
             <div>nav bar</div>
-        </div>
+        </>
     );
 }
 
