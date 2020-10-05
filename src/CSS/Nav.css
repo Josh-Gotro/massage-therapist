@@ -1,16 +1,35 @@
+.NavContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
 .Splash {
-    background-image: url('../Images/Ramona.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 100vh;
-    min-width: 100vw;
-    background-size: 100%;
-    display: flex;
-    align-items: center;
+  background-image: url("../Images/Ramona.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 0;
+  min-width: 100vw;
+  padding-top: 56.25%;
+  display: flex;
+  align-items: center;
 }
 
 .Quote {
-    min-width: 33vw;
-    max-width: 66vw;
-    text-align: right;
+  min-width: 33vw;
+  max-width: 66vw;
+  padding-bottom: 56.25%;
+
+  text-align: right;
+}
+
+.NavBar {
+  background-color: rgba(222, 225, 230, 0.774);
+  height: 15vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 10px;
+  padding-right: 10px;
 }
