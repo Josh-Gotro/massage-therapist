@@ -1,5 +1,5 @@
 import React from 'react';
-import './CSS/Contact.css';
+// import './CSS/Contact.css';
 import { useForm } from "react-hook-form";
 
 const Contact = () => {
@@ -75,4 +75,4 @@ const Contact = () => {
     );
 }
 
-export default Contact;
+export default Contact

@@ -1,5 +1,42 @@
 import React, { useState } from 'react';
-import './CSS/Nav.css';
+import styled from "styled-components";
+import ramona from "./Images/Ramona.png"
+// import './CSS/Nav.css';
+
+const NavContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+`;
+
+const NavBar = styled.div`
+  background-color: rgba(222, 225, 230, 0.774);
+  height: 15vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 10px;
+  padding-right: 10px;
+`;
+
+const Quote = styled.div`
+  min-width: 33vw;
+  max-width: 66vw;
+  padding-bottom: 56.25%;
+  text-align: right;
+`;
+
+const Splash = styled.div`
+  background-image: url(${ramona});
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 0;
+  min-width: 100vw;
+  padding-top: 56.25%;
+  display: flex;
+  align-items: center;
+`;
 
 
 const Nav = () => {
@@ -12,24 +49,24 @@ const Nav = () => {
     }
 
     return (
-        <div className="NavContainer">
+        <NavContainer>
 
-            <div className="Splash">
-                <div className="Quote">
+            <Splash>
+                <Quote>
                     "No worries, I got your back." <br/>
                     - Ghandi
-                </div>
+                </Quote>
 
-            </div>
-            <div className="NavBar">
+            </Splash>
+            <NavBar>
                 <div onClick={viewNav}>RB</div>
                 <div>Technique</div>
                 <a href={contact} target="_blank">Book a Massage</a>
                 <div>Contact</div>
                 <div> Soc   Soc</div>
-            </div>
+            </NavBar>
             
-        </div>
+        </NavContainer>
     );
 }
 
