@@ -1,6 +1,10 @@
 import React from 'react';
-// import './CSS/Contact.css';
+import styled from "styled-components";
 import { useForm } from "react-hook-form";
+
+const ContactForm = styled.div`
+    padding-top: 20%;
+`;
 
 const Contact = () => {
     const { register, handleSubmit, errors } = useForm();
@@ -26,7 +30,7 @@ const Contact = () => {
 
 
     return (
-        <div className="ContactForm">
+        <ContactForm>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input 
                     placeholder="name"
@@ -71,7 +75,7 @@ const Contact = () => {
 
                 <input type="submit" />
             </form>
-        </div>
+        </ContactForm>
     );
 }
 
