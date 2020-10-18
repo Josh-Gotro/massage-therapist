@@ -54,7 +54,7 @@ const Nav = () => {
             <Splash>
                 <Quote>
                     "No worries, I got your back." <br/>
-                    - Ghandi
+                    - Abraham Lincoln
                 </Quote>
 
             </Splash>
